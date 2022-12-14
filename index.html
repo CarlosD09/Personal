@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Personal Website</title>
+
+    <link rel="icon" type="image/x-icon" href="images/C-logo.png">
+
+    
+
+    <!--     Css stylesheet link     -->  
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/956ef19b76.js" crossorigin="anonymous"></script>
+     
+    <!-- Google Fonts - Montserrat font weight: 400 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+     <!-- Google Fonts - Playfair Display font weight: 400 & 900 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts - Bebas Neue regualr 400 Handwriting // WARNING: Everything toUpperCase(text); -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+</head>
+<body> 
+
+    <!-- NAVBAR -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+         <i class="fas fa-bars"></i>
+        </label>
+        
+        <label class="logo">C.</label>
+        <ul>
+            <li><a class="active navLink" href="#top-container">Home</a></li>
+            <li><a class="navLink" href="#middle-container">Publications</a></li>
+            <li><a class="navLink" href="#about">About</a></li>
+            <li><a class="navLink" href="">Contact</a></li>
+            <li><a class="navLink" href="">Feedback</a></li>
+        </ul>
+
+    </nav>
+
+
+
+    <div id="top-container">
+        <h1>Hi, I'm Carlos.</h1>
+        <p>A 13 year old frontend- and backend Web Developer. <br> I know HTML, CSS, the programming language Java Script and some frameworks like Bootstrap, Node.js and Express.
+             I also know the basics in using the command line (cmd) and the Hyper terminal. </p>
+    </div>
+    
+    <div id="middle-container">
+        <hr class="between-div-hr">
+        <h1 class="section-heading">My Recent Publications:</h1>
+        <div>
+            <a href="https://www.google.com/"><img class="clickable" src="images/Drum-kit.png" alt="Drum-Kit-Project"></a>
+            <a href="https://www.google.com/"><img class="clickable" src="images/Simon.png" alt="Simon-game-Project"></a>
+            <a href="https://www.google.com/"><img class="clickable" src="images/dice.png" alt="Dice-game-Project"></a>
+        </div>
+        
+    </div>
+
+    <div id="about">
+        <hr class="between-div-hr">
+        <h1 class="section-heading">About Me</h1>
+        <div class="about-div">
+            <img class="about-img change-img" src="images/coding.png" alt="coding-img" onclick="hover(this); changeImage()" onmouseout="unhover(this);"> 
+            <p>My name is Carlos and im a HTML and CSS web developer. I'm still learning programming languages like Java Script and the markup languages: HTML and CSS. 
+                I like to put my skills into practice, that's why I created this personal website of me :) But I don't only learn programming, I can also play the piano pretty good.
+                Actually, I started learning to play the piano since I was four! In addition to that I also started learning to type with 10 fingers recently. 
+                Im actually getting pretty used to it. I also like to do some sport in my free time. </p>
+                <p class="inline-block"><br>You can read more about me </p> <a class="about-me-link" href="about.html">here</a>
+            
+                
+            </div>
+    </div>
+    <hr class="between-div-hr">
+
+
+    <div style="margin-bottom: 2000px;"></div>
+    
+   <!--  Icons from IconKanan and Flaticon -->
+   
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="JS/index.js"></script>
+
+</body>
+</html>

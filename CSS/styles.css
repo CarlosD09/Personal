@@ -1,0 +1,380 @@
+
+/********************************************************** INDEX.HTML PAGE *********************************************************************/
+
+*{
+    scroll-behavior: smooth; /* So it can scroll down by links */
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EEEEEE;
+}
+
+.between-div-hr {
+    margin: 130px 0;
+}
+
+p {
+    color: #646464;
+}
+
+.change-img {
+    cursor: pointer;
+}
+
+.line {
+    margin-right: 20px;
+    background: #000000;
+    width: 70px;
+    height: 1px;
+    display: inline-block;
+    margin-left: 5%;
+    vertical-align: top;
+    margin-top: 20px;
+
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+
+h1.section-heading {
+    margin: 50px 0 0 60px;
+}
+
+
+/* NAVBAR */
+
+
+nav {
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    background: #EEEEEE;
+
+}
+
+label.logo{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+  
+}
+
+nav ul{
+  float: right;  
+  margin-right: 5%;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: #7F8487;
+    font-size: 17px;
+    padding: 7px 13px;
+    cursor: pointer;
+}
+
+a.active,a:hover{
+    color: #a4abaf;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #7F8487;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        max-height: 100vh;
+        background:#e4dede;
+        top: 80px;
+        left: -100%; 
+        /* Its not visible but on the left. Its so the transition comes from the left */
+        text-align: center;
+        transition: all .7s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+
+
+/* TOP CONTAINER */
+
+#top-container{
+    padding-top: 160px; /* 80 */
+    margin: 0 auto;
+    max-width: 60%; 
+}
+#top-container h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 70px;
+    
+    display: block;
+    margin: 0.67em 0;
+}
+
+#top-container p{
+    font-size: 20px;
+    display: block;
+    padding-bottom: 50px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 858px){
+    div#top-container{
+        max-width: 80%;
+    }
+}
+
+/* MIDDLE CONTAINER */
+
+img.clickable{
+    transition: .8s; 
+    margin: 100px 60px 50px 60px; 
+    width: 500px;
+}
+
+img.clickable:hover {
+    transition: .8s; 
+    margin: 50px 25px 25px 25px; /* 80 */
+    width: 600px; 
+    /* box-shadow: rgb(45, 35, 102) 0px 0px 50px; */
+    box-shadow: 0 10px 60px 20px rgb(0 0 0 / 20%); 
+}
+
+/* About Section */
+
+.about-div {
+    margin: 100px 0 0 60px;
+    max-width: 90%;
+    font-size: 20px;
+    line-height: 1.75;
+    text-align: justify;
+}
+
+.about-img {
+    float: right;
+    margin: -70px 0 0 50px;
+    width: 300px;
+    transition: 2s;
+}
+/* 
+.about-big-img {
+    float: right;
+    margin: -140px 0 0 50px;
+    width: 500px;
+    transition: 2s;
+}
+ */
+
+.about-me-link {
+    cursor: pointer;
+    color: #0e3bbb;
+    text-decoration: underline;
+    transition: .7s;
+}
+
+.about-me-link:hover {
+    color: #4b78f3;
+    font-size: 30px;
+    transition: .7s;
+    margin-top: 0;
+}
+
+.inline-block {
+    display: inline-block;
+} 
+
+/********************************************************* ABOUT ME PAGE! ***************************************************************************************/
+
+.about-top-container {
+    padding-top: 160px;
+    margin: 0 auto 100px;
+    max-width: 60%; 
+}
+
+.about-top-container h1{
+   /* font-family: 'Lobster', cursive;  */
+   font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+    
+    display: block;
+    margin: 0.67em 0;
+}
+
+.about-top-container p{
+    font-size: 20px;
+    display: block;
+    padding-bottom: 50px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 858px){
+    div.about-top-container{
+        max-width: 80%;
+    }
+}
+
+/* ABOUT ME PAGE - SKILLS */
+
+#a-skills {
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+.a-heading {
+    width: 100%;
+}
+
+.a-headline {
+    margin: 150px 0 100px; /* 250px */
+}
+
+.a-skill-row {
+    margin: 100px 60px 0 0;
+    max-width: 50%;
+    font-size: 20px;
+    line-height: 1.75;
+    text-align: justify;
+}
+
+.a-left-skill-row {
+    margin: 100px 60px 0 60px;
+ /*    max-width: 50%;
+    font-size: 20px;
+    line-height: 1.75;
+    text-align: justify; */
+}
+
+.a-skills-img {
+    width: 350px;
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 50px;
+}
+
+.a-skills-section {
+    display: flex;
+}
+
+.p-under-heading {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1100px){
+    .a-skills-section {
+        display: block;
+    }
+
+    .a-skill-row {
+        max-width: 80%;
+        margin: 100px 60px 0 10%;
+    }
+}
+
+/* ABOUT ME PAGE - Education */
+
+.a-education {
+    padding: 180px 0 0;
+}
+
+.a-education-section {
+    display: flex;
+}
+
+.a-graduate-img {
+   /*  max-width: 100%;
+    
+    max-height: 100%; */
+    width: 400px;
+  
+    padding: 50px 50px 50px 100px;
+}
+
+.a-education-row {
+    margin: 100px 100px 0 100px;
+}
+
+.a-education-p {
+    font-size: 25px;
+    text-align: right;
+    margin: 0 40px 20px 0;
+} 
+
+.a-education-p span {
+    color: rgb(128, 120, 12);
+    text-decoration: underline;
+}
+
+@media (max-width: 1800px){
+
+    .a-education-section {
+        display: block;
+    }
+
+    .a-education-row {
+        border: solid rgba(243, 227, 9, 0.322) 5px;
+    }
+
+}
+
+
